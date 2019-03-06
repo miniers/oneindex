@@ -13,6 +13,9 @@ class view {
 
 		return new view($file, $set);
 	}
+	static function json($data) {
+		return json_encode($data);
+	}
 
 	public function __construct($file, $set = null) {
 		if (isset(self::$_pos)) {

@@ -56,6 +56,9 @@ if( ($_COOKIE['admin'] == md5(config('password').config('refresh_token')) || $im
 }
 
 
+route::any('/files','FilesController@index');
+
+
 /**
  *    列目录
  */
